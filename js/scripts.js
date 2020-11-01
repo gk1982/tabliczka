@@ -1,7 +1,14 @@
 {
 $(function () {
-var $scratchit = $('.scratchit').scratchIt();
+
+
+//$('body').append('<div id="loader"></div>');
+$('#loader').load("section_math_table/section.html",function() { var $scratchit = $('.scratchit').scratchIt();});
+
+
 });
+
+
 
   $("#scratch-card-1").on('mousedown mouseup',function(){
     $("#scratch-card-1").toggleClass("cursor-grabbing");
